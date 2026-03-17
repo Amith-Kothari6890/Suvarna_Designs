@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suvarna Designs</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0b0b0f;
+  color:#fff;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 10%;
+  position:fixed;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+}
+
+nav h1{
+  color:#ff9f1c;
+}
+
+nav a{
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: radial-gradient(circle at top, #1a1a2e, #0b0b0f);
+}
+
+.hero h1{
+  font-size:50px;
+  background: linear-gradient(90deg,#ff9f1c,#ff3cac,#784ba0);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+.btn{
+  padding:12px 25px;
+  background:linear-gradient(90deg,#ff9f1c,#ff3cac);
+  border:none;
+  color:white;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* SERVICES */
+.services{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.services h2{
+  font-size:36px;
+  margin-bottom:40px;
+}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#141420;
+  padding:30px;
+  border-radius:20px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  background:linear-gradient(135deg,#ff3cac,#784ba0);
+}
+
+/* PORTFOLIO */
+.portfolio{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.portfolio-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.portfolio img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* PRICING */
+.pricing{
+  padding:80px 10%;
+  text-align:center;
+}
+
+.price-card{
+  background:#141420;
+  padding:30px;
+  border-radius:20px;
+}
+
+.price-card h3{
+  color:#ff9f1c;
+}
+
+/* CONTACT */
+.contact{
+  padding:80px 10%;
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#000;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h1>Suvarna Designs</h1>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Portfolio</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div>
+    <h1>We Turn Ideas Into Stunning Designs</h1>
+    <p>Creative designs that grow your business 🚀</p>
+    <button class="btn">Get Started</button>
+  </div>
+</section>
+
+<section class="services">
+  <h2>Our Services</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Logo Design</h3>
+      <p>Unique and professional brand identity</p>
+    </div>
+    <div class="card">
+      <h3>Social Media</h3>
+      <p>Engaging banners and ads</p>
+    </div>
+    <div class="card">
+      <h3>YouTube Thumbnails</h3>
+      <p>High CTR designs</p>
+    </div>
+    <div class="card">
+      <h3>Business Ads</h3>
+      <p>Creative posters & ads</p>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio">
+  <h2>Recent Work</h2>
+  <div class="portfolio-grid">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>Pricing</h2>
+  <div class="cards">
+    <div class="price-card">
+      <h3>Basic - ₹800</h3>
+      <p>1 Logo + 2 Revisions</p>
+    </div>
+    <div class="price-card">
+      <h3>Standard - ₹1500</h3>
+      <p>Logo + Banner</p>
+    </div>
+    <div class="price-card">
+      <h3>Premium - ₹3000</h3>
+      <p>Full Branding</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>WhatsApp: +91 9270382046</p>
+  <button class="btn">Chat Now</button>
+</section>
+
+<footer>
+  <p>© 2026 Suvarna Designs</p>
+</footer>
+
+</body>
+</html>
